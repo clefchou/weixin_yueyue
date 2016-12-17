@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/addNumberMsg/addNumberMsg",
+    "pages/searchMsg/searchMsg",
+    "pages/info/info",
+    "pages/addNumber/addNumber",
+    "pages/items/items"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "约约(校内版)",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+      "list": [{
+          "pagePath": "pages/index/index",
+          "text":"首页"
+        },{
+          "pagePath":"pages/search/search",
+          "text":"搜索"
+        },{
+          "pagePath":"pages/info/info",
+          "text":"我"
+        }]
+  },
+  "debug":true
+}

@@ -1,0 +1,38 @@
+
+<!--index.wxml-->
+<view class="container">
+  <view bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    
+  </view>
+  <view class="weui-btn-area">
+    <view class="page__bd">
+      <view class="section">
+
+        <modal title="提示" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="addNumber" bindcancel="modalChange">
+        请完善您的个人信息。
+        </modal>
+
+
+      <button id="notes" class="titlebutton">
+        <view class="midtitle">我的预约</view>
+      </button>
+        <scroll-view scroll-y="true" style="height: 200px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+          <button id="notes" class="scroll-view-item {{bccolor[index%4]}}" wx:for-items="{{result}}">
+            <view>活动名称：{{match_type_trans[item.match_type]}}</view>
+            <view>活动日期：{{item.date}}</view>
+            <view>现有人数：{{item.now_num}}</view>
+            <view>计划人数：{{item.aquired_num}}</view>
+           
+          </button>
+        </scroll-view>
+      </view>
+    </view>
+    <view class="section section gap">
+      <view class="button-wrapper">
+        <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="doSearch"> 开始预约
+        </button>
+      </view>
+    </view>
+  </view>
+</view>

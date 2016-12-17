@@ -1,0 +1,4 @@
+<view class="weui-items">约到的项目：</view>
+  <view wx:for="{{items}}">
+    项目{{index+1}}:{{item.name}} 日期，时间，约的人微信号
+  </view>

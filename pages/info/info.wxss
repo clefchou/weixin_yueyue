@@ -1,0 +1,38 @@
+/* pages/info/info.wxss */
+page{
+    background-color:#ECECEC;
+
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 60rpx 50px;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: #aaa;
+}
+.usermotto {
+  margin-top: 200px;
+}
+.container {
+   font-family: Dengxian  ;
+  font-size:18px;
+ color:#F0F0F0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 60rpx;
+} 
+.weui-item {
+  padding:10px;
+}
