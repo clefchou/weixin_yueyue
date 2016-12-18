@@ -47,7 +47,7 @@ Page({
       })
     })
      wx.request({ //先查找有没有个人信息,然后再查找预约活动
-     url: 'http://127.0.0.1/info.php',
+     url: 'http://kanjin5sui.cn/userinfo.php',
      data: {name:this.data.name,phone:this.data.phone,if_insert:this.data.if_insert},
      header: {'content-type': 'application/x-www-form-urlencoded'},  //添加头部才能传输
      method: 'POST',
@@ -67,7 +67,7 @@ Page({
 
   
    wx.request({
-     url: 'http://127.0.0.1/onload.php',
+     url: 'http://kanjin5sui.cn/onload.php',
      method: 'POST',
      success:function(res) {
        that.setData({

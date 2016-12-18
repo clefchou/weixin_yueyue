@@ -42,7 +42,7 @@ Page({
     forSubmit: function(e){
         var _this = this
         wx.request({
-            url: 'http://127.0.0.1/test.php',
+            url: 'http://kanjin5sui.cn/search.php',
             data: {num:this.data.num,date:this.data.date,match_type:this.data.match_type},
             header: {'content-type': 'application/x-www-form-urlencoded'},  //添加头部才能传输
             method: 'POST', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
