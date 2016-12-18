@@ -44,7 +44,7 @@ Page({
     //跳转到显示约成功的页面
     forSubmit: function(){
         wx.request({ //先查找有没有个人信息,然后再查找预约活动
-     url: 'http://127.0.0.1/info.php',
+     url: 'http://kanjin5sui.cn/userinfo.php',
      data: {name:this.data.name,phone:this.data.phone,if_insert:this.data.if_insert},
      header: {'content-type': 'application/x-www-form-urlencoded'},  //添加头部才能传输
      method: 'POST',

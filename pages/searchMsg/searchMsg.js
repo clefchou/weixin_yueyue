@@ -1,7 +1,7 @@
 Page({
     toMyInfo: function (e){
         wx.navigateTo({
-            url: '../../pages/index/index'
+            url: '../index/index'
         })
     }
 })
